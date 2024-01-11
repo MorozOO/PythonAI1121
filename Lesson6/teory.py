@@ -34,3 +34,11 @@ warnings.simplefilter("always",ImportWarning)
 
 warnings.warn("Обережно, тут немає коду", SyntaxWarning)
 warnings.warn("Попередження, модуль не імпортувався", ImportWarning)
+
+from colorama import Fore, Back, Style
+print(Fore.RED+"Text red")
+print(Fore.GREEN+"Text GREEN")
+# print(Fore.RED)   
+print(Fore.RED,Back.CYAN+"Text Text Text")
+print(Style.RESET_ALL)
+print("Text Text Text")
