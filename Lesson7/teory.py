@@ -34,3 +34,29 @@ it = iter(myList)
 
 for elem in it:
     print(elem)
+import random
+forList = []
+for i in range(9):
+    a = random.randint(0,10)
+    if a %2 ==0 :
+        forList.append(a)
+
+print(forList)
+
+
+generatorList = [random.randint(0,10) for i in range(9)]
+print(generatorList)
+
+generatorList = [i**2 for i in range(2,20)]
+print(generatorList)
+
+def degrees(num, max_degrees):
+    i = 0
+    for _ in range(max_degrees):
+        yield num * i
+        i+=1
+
+res = degrees(123,500)
+print(res)
+for _ in res:
+    print(_)
