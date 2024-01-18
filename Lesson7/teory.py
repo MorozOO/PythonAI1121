@@ -44,7 +44,7 @@ for i in range(9):
 print(forList)
 
 
-generatorList = [random.randint(0,10) for i in range(9)]
+generatorList = [(random.randint(0,10))  for i in range(9) ]
 print(generatorList)
 
 generatorList = [i**2 for i in range(2,20)]
@@ -59,4 +59,7 @@ def degrees(num, max_degrees):
 res = degrees(123,500)
 print(res)
 for _ in res:
-    print(_)
+    print(next(res))
+
+i = input()
+print(eval(i))
